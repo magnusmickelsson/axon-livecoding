@@ -1,0 +1,280 @@
+{
+  "front-version": "2.19.2",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "id": "a03b2f43-e868-4564-a6bf-fbed79f5df54",
+      "lastModified": "2019-05-10T08:49:00.388+02:00",
+      "name": "Axon-livecoding"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"id\": \"1\",\n  \"amount\": \"99\",\n  \"comment\": \"This is a comment\",\n  \"target\": \"The box under my matress\",\n  \"owner\": \"Magnus\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "127.0.0.1:8080",
+        "path": "/admin/account/1/balance"
+      },
+      "id": "f5df342b-2c89-4d07-b421-ce1a694ec1ac",
+      "lastModified": "2019-05-08T08:46:04.990+02:00",
+      "name": "Account balance",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "a03b2f43-e868-4564-a6bf-fbed79f5df54"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"id\": \"1\",\n  \"amount\": \"99\",\n  \"comment\": \"This is a comment\",\n  \"target\": \"The box under my matress\",\n  \"owner\": \"Magnus\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "127.0.0.1:8080",
+        "path": "/admin/account/1/transactions"
+      },
+      "id": "7769b9b1-8f21-4577-94b6-ba64c82599d4",
+      "lastModified": "2019-05-08T08:45:38.306+02:00",
+      "name": "Account transactions",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "a03b2f43-e868-4564-a6bf-fbed79f5df54"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.5",
+        "name": "DELETE"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"id\": \"1\",\n  \"owner\": \"Magnus\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "127.0.0.1:8080",
+        "path": "/admin/account/1"
+      },
+      "id": "fd1ccfbb-d98f-42e0-a457-7b8d1bf12138",
+      "lastModified": "2019-05-10T08:30:32.220+02:00",
+      "name": "Admin close account",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "a03b2f43-e868-4564-a6bf-fbed79f5df54"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"id\": \"1\",\n  \"owner\": \"Magnus\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "127.0.0.1:8080",
+        "path": "/admin/account/"
+      },
+      "id": "39d67e20-517f-49de-9d8f-8d5d0d33d102",
+      "lastModified": "2019-05-08T08:27:57.074+02:00",
+      "name": "Admin open account",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "a03b2f43-e868-4564-a6bf-fbed79f5df54"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"id\": \"1\",\n  \"amount\": \"190\",\n  \"comment\": \"This is a comment\",\n  \"source\": \"The box under my matress\",\n  \"owner\": \"Magnus\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "127.0.0.1:8080",
+        "path": "/admin/account/1/deposit"
+      },
+      "id": "7c9471c2-4cad-42e5-8363-05122d191f22",
+      "lastModified": "2019-05-08T08:52:39.253+02:00",
+      "name": "Deposit to account",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "a03b2f43-e868-4564-a6bf-fbed79f5df54"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n  \"id\": \"1\",\n  \"amount\": \"99\",\n  \"comment\": \"This is a comment\",\n  \"target\": \"The box under my matress\",\n  \"owner\": \"Magnus\"\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "127.0.0.1:8080",
+        "path": "/admin/account/1/withdraw"
+      },
+      "id": "a0c794f8-44f5-4000-b257-c88267951626",
+      "lastModified": "2019-05-08T08:45:10.880+02:00",
+      "name": "Withdraw from account",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "a03b2f43-e868-4564-a6bf-fbed79f5df54"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true
+      },
+      "headersType": "Form",
+      "uri": {
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "127.0.0.1:8080",
+        "path": "/api/accounts/1"
+      },
+      "id": "8bc947fb-ec3b-44b2-8388-b2668fc70c8b",
+      "lastModified": "2019-05-10T08:49:00.388+02:00",
+      "name": "http://127.0.0.1:8080/query/accounts",
+      "headers": [],
+      "metaInfo": {},
+      "parentId": "a03b2f43-e868-4564-a6bf-fbed79f5df54"
+    }
+  ]
+}
