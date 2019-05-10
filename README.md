@@ -21,6 +21,13 @@ The server starts on port 8080 and dumps a lot of stuff in the log.
 
 If you run into problems, feel free to let me know at magnus (dot) mickelsson (at) gmail (dot) com.
 
+# App structure
+
+* admin package - the admin REST resource able to modify aggregate state
+* domain package - Account aggregate, api.kt file has all commands, events and transport objects
+* query package - a simple read model (essentially just the account balance, to demo how it can work)
+* root app package (it.actuallyrocks.livecoding) - Spring Boot application class and configuration
+
 # REST API - admin
 
 | Operation | Method | URL | Payload |
