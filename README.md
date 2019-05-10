@@ -40,6 +40,12 @@ http://127.0.0.1:8080/api/
 
 It's a HATEOAS REST API, can be explored.
 
+# Spring Actuator metrics etc
+
+http://127.0.0.1:8080/actuator/
+
+# What else?
+
 Hope you find it useful. Not that the code is NOT production quality, it's
 for teaching/exporing/learning purposes ONLY.
 
